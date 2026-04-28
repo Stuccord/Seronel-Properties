@@ -88,7 +88,5 @@ export default function HeroSearch() {
         </div>
       </form>
     </div>
-      </form>
-    </div>
   );
 }
