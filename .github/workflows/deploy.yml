@@ -46,19 +46,26 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: npm run build
+
+      - name: Debug Output Directory
+        run: |
+          echo "Listing current directory:"
+          ls -F
+          echo "Checking for 'out' directory:"
+          if [ -d "out" ]; then echo "out exists"; else echo "out DOES NOT exist"; fi
+          echo "Checking for '.next' directory:"
+          if [ -d ".next" ]; then echo ".next exists"; ls -F .next; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: out
 
   deploy:
     environment:

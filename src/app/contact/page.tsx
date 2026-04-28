@@ -139,7 +139,7 @@ export default function ContactPage() {
                  <img 
                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                    alt="Map Location" 
-                   className="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
                  />
                </a>
             </div>

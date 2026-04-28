@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section className="py-24 bg-card relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
-            <div className="w-full lg:w-1/2 relative h-[600px] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl group">
+            <div className="w-full lg:w-1/2 relative h-[600px] rounded-[2rem] overflow-hidden border border-black/10 shadow-2xl group">
               {/* Realistic Founder Photo */}
               <Image 
                 src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
@@ -80,7 +80,7 @@ export default function AboutPage() {
             Take a moment to virtually meet the person who will be guiding you through your property acquisition journey.
           </p>
           
-          <div className="relative max-w-4xl mx-auto rounded-[2rem] overflow-hidden border-[8px] border-white/5 shadow-2xl aspect-video group cursor-pointer bg-black">
+          <div className="relative max-w-4xl mx-auto rounded-[2rem] overflow-hidden border-[8px] border-black/5 shadow-2xl aspect-video group cursor-pointer bg-black">
              <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
                {/* Using a placeholder professional video */}
                <source src="https://player.vimeo.com/external/409206405.sd.mp4?s=0eb45b736b416e91122a27ffae9024f0c4bb21e7&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />

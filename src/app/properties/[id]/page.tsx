@@ -5,9 +5,11 @@ import { PROPERTIES } from "@/lib/data";
 import { notFound } from "next/navigation";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
+export const dynamic = 'force-static';
+
 export async function generateStaticParams() {
   return PROPERTIES.map((property) => ({
-    id: property.id,
+    id: property.id.toString(),
   }));
 }
 
@@ -47,23 +49,23 @@ export default async function PropertyDetail({ params }: { params: Promise<{ id:
           {property.images[1] ? (
              <Image src={property.images[1]} alt={`${property.title} Interior`} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           ) : (
-             <div className="w-full h-full bg-white/5 flex items-center justify-center text-white/20">No Image</div>
+             <div className="w-full h-full bg-black/5 flex items-center justify-center text-foreground/20">No Image</div>
           )}
         </div>
         <div className="col-span-1 row-span-1 relative rounded-2xl overflow-hidden group hidden md:block bg-card">
           {property.videoUrl ? (
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white cursor-pointer hover:bg-white/5 transition-colors border border-white/5 hover:border-primary/50">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-foreground cursor-pointer hover:bg-black/5 transition-colors border border-black/5 hover:border-primary/50">
                <PlayCircle className="w-12 h-12 mb-2 text-primary" />
                <span className="font-medium text-sm">Watch Video Tour</span>
             </div>
           ) : property.images[2] ? (
              <Image src={property.images[2]} alt={`${property.title} View`} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
           ) : (
-             <div className="w-full h-full bg-white/5 flex items-center justify-center text-white/20 border border-white/5">No Image</div>
+             <div className="w-full h-full bg-black/5 flex items-center justify-center text-foreground/20 border border-black/5">No Image</div>
           )}
         </div>
-        <div className="col-span-2 row-span-1 relative rounded-2xl overflow-hidden hidden md:block bg-card hover:border-white/20 border border-white/5 transition-colors cursor-pointer">
-          <span className="text-white font-medium flex items-center justify-center h-full w-full">
+        <div className="col-span-2 row-span-1 relative rounded-2xl overflow-hidden hidden md:block bg-card hover:border-black/20 border border-black/5 transition-colors cursor-pointer">
+          <span className="text-foreground font-medium flex items-center justify-center h-full w-full">
             View All Media <ArrowRight className="w-4 h-4 ml-2" />
           </span>
         </div>
@@ -143,8 +145,8 @@ export default async function PropertyDetail({ params }: { params: Promise<{ id:
             
             {property.videoUrl && (
                <div className="mb-12">
-                 <h2 className="text-2xl font-bold text-white mb-6">Video Tour</h2>
-                 <div className="w-full aspect-video rounded-3xl overflow-hidden border border-white/10 relative">
+                 <h2 className="text-2xl font-bold text-foreground mb-6">Video Tour</h2>
+                 <div className="w-full aspect-video rounded-3xl overflow-hidden border border-black/10 relative">
                    <iframe 
                      src={property.videoUrl} 
                      title={`${property.title} Video Tour`}
@@ -234,7 +236,7 @@ export default async function PropertyDetail({ params }: { params: Promise<{ id:
               <h2 className="text-3xl font-bold text-foreground mb-4">Similar Properties</h2>
               <p className="text-foreground/60">Handpicked listings you might also be interested in.</p>
             </div>
-            <Link href="/properties" className="text-primary hover:text-white transition-colors flex items-center font-bold">
+            <Link href="/properties" className="text-primary hover:text-foreground transition-colors flex items-center font-bold">
               View All <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </div>

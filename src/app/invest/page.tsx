@@ -43,7 +43,7 @@ export default function InvestPage() {
       </section>
 
       {/* Why Invest in Ghana */}
-      <section className="py-24 bg-card border-y border-white/5 relative overflow-hidden">
+      <section className="py-24 bg-card border-y border-black/5 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Why Ghana Real Estate?</h2>
@@ -51,7 +51,7 @@ export default function InvestPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-background p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all group">
+            <div className="bg-background p-8 rounded-3xl border border-black/5 hover:border-primary/50 transition-all group">
               <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-7 h-7" />
               </div>
@@ -59,7 +59,7 @@ export default function InvestPage() {
               <p className="text-foreground/60 leading-relaxed">Prime lands in Accra and surrounding areas appreciate between 15% and 25% annually. Build equity faster than traditional markets.</p>
             </div>
             
-            <div className="bg-background p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all group relative overflow-hidden">
+            <div className="bg-background p-8 rounded-3xl border border-black/5 hover:border-primary/50 transition-all group relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110" />
               <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform relative z-10">
                 <ShieldCheck className="w-7 h-7" />
@@ -68,7 +68,7 @@ export default function InvestPage() {
               <p className="text-foreground/60 leading-relaxed relative z-10">Ranked among the safest countries in Africa. Secure your investments in a robust democracy with strong property rights.</p>
             </div>
             
-            <div className="bg-background p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-all group">
+            <div className="bg-background p-8 rounded-3xl border border-black/5 hover:border-primary/50 transition-all group">
               <div className="w-14 h-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
                 <MapPin className="w-7 h-7" />
               </div>
@@ -106,7 +106,7 @@ export default function InvestPage() {
 
             {/* CSS Simulated Chart */}
             <div className="w-full lg:w-1/2">
-              <div className="bg-card p-8 rounded-3xl border border-white/10 shadow-2xl relative">
+              <div className="bg-card p-8 rounded-3xl border border-black/10 shadow-2xl relative">
                 <div className="flex justify-between items-end mb-8">
                   <div>
                     <h4 className="text-foreground font-bold text-xl">Property Appreciation Example</h4>
@@ -115,7 +115,7 @@ export default function InvestPage() {
                   <BarChart3 className="w-8 h-8 text-primary opacity-50" />
                 </div>
 
-                <div className="flex items-end justify-between h-64 gap-2 sm:gap-4 relative border-b border-white/10 pb-4">
+                <div className="flex items-end justify-between h-64 gap-2 sm:gap-4 relative border-b border-black/10 pb-4">
                   {/* Y-axis labels */}
                   <div className="absolute left-0 top-0 bottom-4 flex flex-col justify-between text-xs text-foreground/40 font-mono hidden sm:flex">
                     <span>$100k</span>
@@ -159,7 +159,7 @@ export default function InvestPage() {
       </section>
 
       {/* Land vs House Comparison */}
-      <section className="py-24 bg-card border-y border-white/5 relative">
+      <section className="py-24 bg-card border-y border-black/5 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-4">Where Should You Invest?</h2>
@@ -167,7 +167,7 @@ export default function InvestPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-background rounded-3xl p-8 border border-white/5 hover:border-white/20 transition-colors">
+            <div className="bg-background rounded-3xl p-8 border border-black/5 hover:border-black/20 transition-colors">
               <div className="flex items-center mb-6">
                 <MapPin className="w-8 h-8 text-primary mr-4" />
                 <h3 className="text-3xl font-bold text-foreground">Serviced Land</h3>
@@ -183,7 +183,7 @@ export default function InvestPage() {
               </div>
             </div>
 
-            <div className="bg-background rounded-3xl p-8 border border-white/5 hover:border-white/20 transition-colors">
+            <div className="bg-background rounded-3xl p-8 border border-black/5 hover:border-black/20 transition-colors">
               <div className="flex items-center mb-6">
                 <Building className="w-8 h-8 text-orange-500 mr-4" />
                 <h3 className="text-3xl font-bold text-foreground">Completed Homes</h3>
@@ -232,7 +232,7 @@ export default function InvestPage() {
       </section>
 
       {/* Final CTA with Lead Form */}
-      <section id="invest-form" className="py-24 relative overflow-hidden bg-card border-t border-white/5">
+      <section id="invest-form" className="py-24 relative overflow-hidden bg-card border-t border-black/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-card to-card z-0" />
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Start Your Investment Journey</h2>
