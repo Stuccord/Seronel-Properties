@@ -3,14 +3,24 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { Menu, X, PlusCircle, MessageCircle, Home, Building2, Info, Phone, User, LayoutDashboard, LogOut } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
   const { user, profile, signOut } = useAuth();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const navLinks = [
     { name: "Home", href: "/", icon: Home },
@@ -24,12 +34,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-black/10 shadow-sm bg-white">
-                <img 
+            <Link href="/" onClick={handleLogoClick} className="flex items-center space-x-2 group">
+              <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-black/10 shadow-sm bg-white group-hover:scale-105 transition-transform">
+                <Image 
                   src="https://p16-common-sign.tiktokcdn.com/tos-maliva-avt-0068/8fc4a4987f117ff838ed1213c0f0c632~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=53c09265&x-expires=1777521600&x-signature=XbzRgu49N0JWKQzxfVTZ3YLnQzw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my3" 
                   alt="Seronel Properties Logo"
-                  className="w-full h-full object-cover"
+                  fill
+                  priority
+                  unoptimized
+                  className="object-cover"
                 />
               </div>
               <span className="text-xl font-bold text-foreground tracking-tighter">
