@@ -5,6 +5,12 @@ import { PROPERTIES } from "@/lib/data";
 import { notFound } from "next/navigation";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 
+export async function generateStaticParams() {
+  return PROPERTIES.map((property) => ({
+    id: property.id,
+  }));
+}
+
 export default async function PropertyDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const property = PROPERTIES.find(p => p.id === id);
