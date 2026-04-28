@@ -220,7 +220,6 @@ export default function InvestPage() {
               <div className="relative z-10">
                 <div className="absolute -top-3 -right-3 bg-primary text-xs font-bold px-2 py-1 rounded">Popular</div>
                 <h4 className="text-foreground font-bold text-xl mb-2">6-12 Months</h4>
-                <h4 className="text-foreground font-bold text-xl mb-2">6-12 Months</h4>
                 <p className="text-foreground/60 text-sm">Spread the balance comfortably over a year with zero interest.</p>
               </div>
             </div>
