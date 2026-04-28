@@ -34,7 +34,7 @@ export default function InvestPage() {
             <a href="#invest-form" className="inline-flex bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/90 transition-all items-center justify-center transform hover:scale-105 shadow-lg shadow-primary/20">
               Start Investing Today
             </a>
-            <a href="https://wa.me/1234567890?text=Hello%20LuxeEstates,%20I'm%20interested%20in%20investment%20opportunities." target="_blank" rel="noreferrer" className="inline-flex glass text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all items-center justify-center transform hover:scale-105 border border-white/20">
+            <a href="https://wa.me/1234567890?text=Hello%20Seronel%20Properties,%20I'm%20interested%20in%20investment%20opportunities." target="_blank" rel="noreferrer" className="inline-flex glass text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all items-center justify-center transform hover:scale-105 border border-white/20">
               <MessageCircle className="w-5 h-5 mr-2" />
               Chat on WhatsApp
             </a>

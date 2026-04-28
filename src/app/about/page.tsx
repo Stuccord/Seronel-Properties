@@ -52,13 +52,13 @@ export default function AboutPage() {
             </div>
             
             <div className="w-full lg:w-1/2">
-              <h2 className="text-4xl font-bold text-foreground mb-8">The Genesis of LuxeEstates</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-8">The Genesis of Seronel Properties</h2>
               <div className="space-y-6 text-foreground/70 text-lg leading-relaxed">
                 <p>
                   "After spending a decade working in real estate across London and Dubai, I returned to Ghana to build a home. What I found was a market filled with massive potential, but plagued by opaque land titles, litigation issues, and a severe lack of trust."
                 </p>
                 <p>
-                  "I realized that the diaspora and local professionals were eager to invest, but the friction was simply too high. That's why I founded LuxeEstates."
+                  "I realized that the diaspora and local professionals were eager to invest, but the friction was simply too high. That's why I founded Seronel Properties."
                 </p>
                 <p>
                   "We don't just list properties. We legally vet every single plot, structure flexible payment plans, and provide an end-to-end concierge service. We are your boots on the ground."
